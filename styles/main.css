@@ -5,3 +5,121 @@ html {
 *::after,
 *::before {
   box-sizing: inherit; }
+
+header {
+  height: 150px; }
+
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.logo {
+  float: left; }
+
+.social {
+  float: right;
+  width: 250px;
+  height: 100px;
+  background-color: #F7F7F7;
+  text-align: center; }
+
+.content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.content::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.content-top {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.content-top::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.content-top li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  height: 240px;
+  background-color: #EBEBEB; }
+
+.content-top li:last-child {
+  margin-right: 0; }
+
+.three-columns h5 {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black; }
+
+.main-image {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+
+.main-image:last-child {
+  margin-right: 0; }
+
+.content-bottom {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.content-bottom::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.left-column {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+
+.left-column:last-child {
+  margin-right: 0; }
+
+.section-headers {
+  margin-top: 20px;
+  border-bottom: 1px solid darkgrey; }
+
+.section-headers span {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 40px;
+  padding-bottom: 5px; }
+
+.section-clicked {
+  border-top: 1px solid darkgrey;
+  border-right: 1px solid darkgrey;
+  border-left: 1px solid darkgrey;
+  border-bottom: none; }
+
+.right-column {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+
+.right-column:last-child {
+  margin-right: 0; }
+
+.right-column ul {
+  list-style: none; }
+
+.right-column li {
+  background-color: #EBEBEB; }

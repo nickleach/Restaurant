@@ -1,2 +1,89 @@
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
+header{
+  height: 150px;
+}
+.container{
+@include outer-container;
+}
+.logo{
+  float: left;
+  h1{
+
+  }
+}
+.social{
+  float: right;
+  width: 250px;
+  height: 100px;
+  background-color: #F7F7F7;
+  text-align: center;
+}
+.content{
+   @include outer-container;
+}
+.content-top{
+ @include outer-container;
+ li{
+  @include span-columns(4);
+  height: 240px;
+  background-color: #EBEBEB;
+ }
+}
+.main-image{
+
+}
+.three-columns{
+  h5{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+}
+.news{
+
+}
+.special{
+
+}
+.location{
+
+}
+.main-image{
+  @include span-columns(12)
+}
+.three-columns{
+
+}
+.content-bottom{
+  @include outer-container;
+}
+.left-column{
+  @include span-columns(9);
+}
+.section-headers{
+  margin-top: 20px;
+  border-bottom: 1px solid darkgrey;
+  span{
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 40px;
+    padding-bottom: 5px;
+  }
+}
+.section-clicked{
+  border-top: 1px solid darkgrey;
+  border-right: 1px solid darkgrey;
+  border-left: 1px solid darkgrey;
+  border-bottom: none;
+}
+
+.right-column{
+  @include span-columns(3);
+  ul{
+    list-style: none;
+  }
+  li{
+    background-color:#EBEBEB;
+  }
+}
