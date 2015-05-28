@@ -63,7 +63,15 @@
           Picanha ut drumstick nulla. Jowl pork chop fatback meatball alcatra. Biltong turkey shank irure prosciutto. Andouille occaecat pastrami qui sunt do exercitation landjaeger minim corned beef. Pork chop velit bresaola, fugiat dolore magna pastrami sirloin ham. Short ribs pork belly ham hock ullamco.
         </p>
       </section>
-      <section class="menu displayedsection"></section>
+      <section class="menu displayedsection">
+        <h2>Appetizers</h2>
+        <div class="app"></div>
+        <h2>Entrees</h2>
+        <div class="ent"></div>
+        <h2>Sides a la Carte</h2>
+        <div class="sides"></div>
+
+      </section>
       <section class="reservations hiddensection">
 
       </section>
@@ -85,6 +93,22 @@
   </div>
 
   <script type="template" id="app-template">
+      <div>
+        <span><%=  item %></span>
+        <span><%=  price %></span>
+        <p><%= description %></p>
+      </div>
+  </script>
+
+    <script type="template" id="ent-template">
+      <div>
+        <span><%=  item %></span>
+        <span><%=  price %></span>
+        <p><%= description %></p>
+      </div>
+  </script>
+
+  <script type="template" id="side-template">
       <div>
         <span><%=  item %></span>
         <span><%=  price %></span>
