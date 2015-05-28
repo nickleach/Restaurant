@@ -36,6 +36,7 @@ header{
 .content{
    @include outer-container;
    background-color: #3e5e97;
+   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .content-top{
  @include outer-container;
