@@ -71,20 +71,20 @@
 //Hides and displays content sections
 
   $('#menu').on ('click', function() {
-    $('.our-story').removeClass('displayedsection');
-    $('.reservations').removeClass('displayedsection');
+    $('.our-story').removeClass('displayedsection').addClass('hiddensection');
+    $('.reservations').removeClass('displayedsection').addClass('hiddensection');
     $('.menu').addClass('displayedsection')
   });
 
   $('#story').on ('click', function() {
-    $('.menu').removeClass('displayedsection');
-    $('.reserve').removeClass('displayedsection');
-    $('.story').addClass('displayedsection')
+    $('.menu').removeClass('displayedsection').addClass('hiddensection');
+    $('.reservations').removeClass('displayedsection').addClass('hiddensection');
+    $('.our-story').addClass('displayedsection')
   });
 
   $('#reserve').on ('click', function() {
-    $('.our-story').removeClass('displayedsection');
-    $('.menu').removeClass('displayedsection');
+    $('.our-story').removeClass('displayedsection').addClass('hiddensection');
+    $('.menu').removeClass('displayedsection').addClass('hiddensection');
     $('.reservations').addClass('displayedsection')
   });
 

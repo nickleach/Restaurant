@@ -75,6 +75,9 @@ header{
 }
 .left-column{
   @include span-columns(9);
+  section{
+    overflow: hidden;
+  }
 }
 .section-headers{
   margin-top: 20px;
@@ -104,11 +107,11 @@ header{
 }
 
 .hiddensection {
-  visibility: hidden;
+  height: 0;
 }
 
 .displayedsection {
-  visibility: visible;
+  height: 800px;
 }
 // Nick's footer styling
 footer{
