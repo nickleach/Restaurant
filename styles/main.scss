@@ -1,12 +1,22 @@
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
-// Header Styling
 
+body {
+  background-color: #ffc686;
+}
+
+// Header Styling
 header{
   height: 200px;
   background-color: #80251d;
   border-bottom: 3px solid #d6d6d6;
+  margin: 0;
 }
+#fudText {
+  height: 200px;
+  text-align: center;
+}
+
 .container{
 @include outer-container;
 }
@@ -38,6 +48,7 @@ header{
    @include outer-container;
    background-color: #ffedbf;
    font-family: 'Yanone Kaffeesatz', sans-serif;
+   border: 2px solid black;
 }
 .content-top{
  @include outer-container;
@@ -46,6 +57,7 @@ header{
   height: 240px;
   background-color: #EBEBEB;
   overflow: scroll;
+  padding-right: 50px;
  }
 }
 .main-image{
@@ -129,7 +141,11 @@ header{
 }
 
 .displayedsection {
+
   height: 1000px;
+  visibility: visible;
+  padding-left: 50px;
+
 }
 // Nick's footer styling
 footer{
