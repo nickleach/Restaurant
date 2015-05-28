@@ -28,6 +28,7 @@ header{
   @include span-columns(4);
   height: 240px;
   background-color: #EBEBEB;
+  overflow: scroll;
  }
 }
 .main-image{
