@@ -28,6 +28,7 @@ header{
 }
 .social{
   float: right;
+  margin: 30px;
   width: 250px;
   height: 100px;
   background-color: #F7F7F7;
@@ -37,7 +38,10 @@ header{
   border-radius: 10px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7fda9f2093961274e90380466270c91badfef3f0
 
 // End Header Styling
 
@@ -72,11 +76,19 @@ header{
     border: 1px solid #d6d6d6;
   }
 }
-.news{
+.column-text{
+  padding-left: 10px;
 
 }
+.news{
+  h6{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+  }
+}
 .special{
-
+  text-align: center;
 }
 .location{
 
