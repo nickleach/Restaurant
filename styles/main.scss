@@ -7,8 +7,6 @@ header{
   background-color: #80251d;
   border-bottom: 3px solid #d6d6d6;
 }
-
-
 .container{
 @include outer-container;
 }
@@ -91,7 +89,7 @@ header{
   border-top: 1px solid darkgrey;
   border-right: 1px solid darkgrey;
   border-left: 1px solid darkgrey;
-  border-bottom: none;
+  border-bottom: 0;
 }
 
 .right-column{
@@ -110,4 +108,9 @@ header{
 
 .displayedsection {
   visibility: visible;
+}
+// Nick's footer styling
+footer{
+  height: 100px;
+  border-top: 1px solid darkgrey;
 }
