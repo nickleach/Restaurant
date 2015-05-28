@@ -33,6 +33,9 @@ header {
   border-bottom: 3px solid #d6d6d6;
   border-radius: 10px; }
 
+#fudText {
+  height: 100px; }
+
 .content {
   max-width: 68em;
   margin-left: auto;
@@ -92,6 +95,8 @@ header {
   width: 74.41059%; }
   .left-column:last-child {
     margin-right: 0; }
+  .left-column section {
+    overflow: hidden; }
 
 .section-headers {
   margin-top: 20px;
@@ -121,10 +126,10 @@ header {
     background-color: #EBEBEB; }
 
 .hiddensection {
-  visibility: hidden; }
+  height: 0; }
 
 .displayedsection {
-  visibility: visible; }
+  height: 800px; }
 
 footer {
   height: 100px;
