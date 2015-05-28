@@ -10,7 +10,7 @@
   menuURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu-1';
 
   var getMenu = $.getJSON(menuURL).success(function(response) {
-    $('#menu').append($.each(response, function(key,value) {
+    $('.menu').append($.each(response, function(key,value) {
       '<h2>' + key + '</h2>';
     }))
   })
@@ -25,7 +25,7 @@
   $('#story').on ('click', function() {
     $('.menu').removeClass('displayedsection');
     $('.reserve').removeClass('displayedsection');
-    $('.store').addClass('displayedsection')
+    $('.story').addClass('displayedsection')
   });
 
   $('#reserve').on ('click', function() {
