@@ -1,24 +1,50 @@
 // $(document).ready( function () {
 newsURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/news/latest';
 
-var getNews = $.getJSON(newsURL).success(function(response) {
 
-  $('.news').html('<span>' + response.title + '</span><span> ' + response.date_published + '</span><p>' + response.post + '</p>');
+$.getJSON(newsURL).success(function(response) {
+  $('.news').html('<span>' + response.title + '</span><span>' + response.date_published + '</span><p>' + response.post + '</p>');
 }
   );
 
-var getSpecials = $.getJSON('http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu/special');
+specialURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu/special';
+menuURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu-1';
 
-var getMenu = $.getJSON('http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu-1');
-
-var getMainPic = $.getJSON('http://api.flickr.com/services/rest/?');
-
-
-var news = getNews.response;
-
-
+var getMenu = $.getJSON(menuURL).success(function(response) {
+  $('#menu').append($.each(response, function(key,value) {
+    '<h2>' + key + '</h2>';
+  }))
+})
 
 
+$('#menu').on ('click', function() {
+  $('.story').removeClass('displayedsection');
+  $('.reserve').removeClass('displayedsection');
+  $('.menu').addClass('displayedsection')
+});
+
+$('#story').on ('click', function() {
+  $('.menu').removeClass('displayedsection');
+  $('.reserve').removeClass('displayedsection');
+  $('.store').addClass('displayedsection')
+});
+
+$('#reserve').on ('click', function() {
+  $('.story').removeClass('displayedsection');
+  $('.menu').removeClass('displayedsection');
+  $('.reserve').addClass('displayedsection')
+});
+
+
+// (function(response) {
+
+  // $('#menu').html('<span>' + response.title + '</span><span>' + response.date_published + '</span><p>' + response.post + '</p>');
+// }
+//   );
+
+
+
+// var getMainPic = $.getJSON('http://api.flickr.com/services/rest/?');
 
 
 
