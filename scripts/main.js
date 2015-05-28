@@ -17,23 +17,32 @@
 
 
   $('#menu').on ('click', function() {
-    $('.story').removeClass('displayedsection');
-    $('.reserve').removeClass('displayedsection');
+    $('.our-story').removeClass('displayedsection');
+    $('.reservations').removeClass('displayedsection');
     $('.menu').addClass('displayedsection')
   });
 
   $('#story').on ('click', function() {
     $('.menu').removeClass('displayedsection');
+<<<<<<< .merge_file_dm4bLw
     $('.reserve').removeClass('displayedsection');
     $('.story').addClass('displayedsection')
+=======
+    $('.reservations').removeClass('displayedsection');
+    $('.our-story').addClass('displayedsection')
+>>>>>>> .merge_file_PLIFqb
   });
 
   $('#reserve').on ('click', function() {
-    $('.story').removeClass('displayedsection');
+    $('.our-story').removeClass('displayedsection');
     $('.menu').removeClass('displayedsection');
-    $('.reserve').addClass('displayedsection')
+    $('.reservations').addClass('displayedsection')
   });
 
+// $('.section-headers span').on('click', function(){
+//   $('.section-headers span').removeClass('.section-hidden');
+//   $(this).addClass('section-clicked');
+// });
 
 // (function(response) {
 
