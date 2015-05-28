@@ -3,7 +3,7 @@ newsURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/news/late
 
 var getNews = $.getJSON(newsURL).success(function(response) {
 
-  $('.news').html('<span>' + response.title + '</span><span>' + response.date_published + '</span><p>' + response.post + '</p>');
+  $('.news').html('<span>' + response.title + '</span><span> ' + response.date_published + '</span><p>' + response.post + '</p>');
 }
   );
 
