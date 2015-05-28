@@ -15,6 +15,10 @@ header {
   border-bottom: 3px solid #d6d6d6;
   margin: 0; }
 
+#fudText {
+  height: 200px;
+  text-align: center; }
+
 .container {
   max-width: 68em;
   margin-left: auto;
