@@ -9,31 +9,56 @@
   specialURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu/special';
   menuURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu-1';
 
-  var getMenu = $.getJSON(menuURL).success(function(response) {
-    $('#menu').append($.each(response, function(key,value) {
-      '<h2>' + key + '</h2>';
-    }))
-  })
 
+  var appTemplate = _.template($('#app-template').text());
+
+  $.getJSON(menuURL, function(items){
+    processApps(items.appetizers);
+    });
+
+  function processApps(items) {
+    items.forEach(function(app){
+      var $element = appTemplate(app);
+      $('.menu').append($element);
+    });
+  }
+
+
+//------
+
+  // var appetiz;
+
+  // $.getJSON(menuURL).success(function(x) {
+  //   // $('.menu').html('<span>Appetizers</span>');
+  //   appetiz = $('.menu').append(x.appetizers);
+  //   // $('.menu').prepend('<span> ' + x.appetizers.item + ' </span><span> ' + x.appetizers.price + ' </span><p> ' + x.appetizers.description + '</p>');
+  // });
+
+
+//----
 
   $('#menu').on ('click', function() {
-    $('.story').removeClass('displayedsection');
-    $('.reserve').removeClass('displayedsection');
+    $('.our-story').removeClass('displayedsection');
+    $('.reservations').removeClass('displayedsection');
     $('.menu').addClass('displayedsection')
   });
 
   $('#story').on ('click', function() {
     $('.menu').removeClass('displayedsection');
     $('.reserve').removeClass('displayedsection');
-    $('.store').addClass('displayedsection')
+    $('.story').addClass('displayedsection')
   });
 
   $('#reserve').on ('click', function() {
-    $('.story').removeClass('displayedsection');
+    $('.our-story').removeClass('displayedsection');
     $('.menu').removeClass('displayedsection');
-    $('.reserve').addClass('displayedsection')
+    $('.reservations').addClass('displayedsection')
   });
 
+  $('.section-headers span').on('click', function(){
+    $('.section-headers span').removeClass('section-clicked');
+    $(this).addClass('section-clicked');
+  });
 
 // (function(response) {
 
