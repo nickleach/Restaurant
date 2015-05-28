@@ -123,3 +123,9 @@ header {
 
 .right-column li {
   background-color: #EBEBEB; }
+
+.hiddensection {
+  visibility: hidden; }
+
+.displayedsection {
+  visibility: visible; }
