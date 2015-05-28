@@ -81,21 +81,36 @@ header{
 }
 .section-headers{
   margin-top: 20px;
-  border-bottom: 1px solid darkgrey;
   span{
     font-size: 20px;
     display: inline-block;
-    margin-left: 40px;
-    padding-bottom: 5px;
+    padding:5px;
+    padding-bottom: 0px;
+    margin-left: -3px;
+    margin-right: -3px;
   }
 }
 .section-clicked{
   border-top: 1px solid darkgrey;
   border-right: 1px solid darkgrey;
   border-left: 1px solid darkgrey;
-  border-bottom: 0;
+  border-radius: 5px;
 }
-
+.border-right{
+  border-bottom: 1px solid darkgrey;
+  display: inline-block;
+  width: 400px;
+  margin-bottom: -6px;
+}
+.border-left{
+  width: 40px;
+  border-bottom: 1px solid darkgrey;
+  display: inline-block;
+  margin-bottom: -6px;
+}
+.border{
+  border-bottom: 1px solid darkgrey;
+}
 .right-column{
   @include span-columns(3);
   ul{
@@ -111,7 +126,7 @@ header{
 }
 
 .displayedsection {
-  height: 800px;
+  height: 1000px;
 }
 // Nick's footer styling
 footer{
