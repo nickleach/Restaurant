@@ -1,5 +1,6 @@
 // $(document).ready( function () {
 
+
       //Pulls latest news from API
   newsURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/news/latest';
 
@@ -8,10 +9,10 @@
   }
     );
 
-  specialURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu/special';
 
   //Pulls menu info from API
   menuURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu-1';
+
 
       //Pulls appetizers from API
   var appTemplate = _.template($('#app-template').text());
@@ -27,6 +28,7 @@
     });
   }
 
+
       //Pulls entrees from API
   var entTemplate = _.template($('#ent-template').text());
 
@@ -41,6 +43,7 @@
     });
   }
 
+
       //Pulls sides from API
   var sideTemplate = _.template($('#side-template').text());
 
@@ -54,6 +57,16 @@
       $('.sides').append($element);
     });
   }
+
+
+  //Pulls special from menu API
+
+  // specialURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu/special';
+
+  // $.getJSON(specialURL).success(function(response) {
+  //   $('.special').html('<span>' +  + '</span><span> ' + response.date_published + '</span><p>' + response.post + '</p>');
+  // }
+  //   );
 
 //Hides and displays content sections
 
