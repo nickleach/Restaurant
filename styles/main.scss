@@ -78,10 +78,6 @@ header{
   border-left: 1px solid darkgrey;
   border-bottom: none;
 }
-.section-hidden{
-  color: red;
-}
-
 .right-column{
   @include span-columns(3);
   ul{

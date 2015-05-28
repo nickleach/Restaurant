@@ -34,10 +34,10 @@
     $('.reservations').addClass('displayedsection')
   });
 
-// $('.section-headers span').on('click', function(){
-//   $('.section-headers span').removeClass('.section-hidden');
-//   $(this).addClass('section-clicked');
-// });
+  $('.section-headers span').on('click', function(){
+    $('.section-headers span').removeClass('section-clicked');
+    $(this).addClass('section-clicked');
+  });
 
 // (function(response) {
 
