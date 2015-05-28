@@ -41,9 +41,6 @@ header {
   border-bottom: 3px solid #d6d6d6;
   border-radius: 10px; }
 
-#fudText {
-  height: 100px; }
-
 .content {
   max-width: 68em;
   margin-left: auto;
@@ -80,6 +77,10 @@ header {
   padding-left: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid black; }
+
+.three-columns li {
+  border-radius: 5px;
+  border: 1px solid #d6d6d6; }
 
 .main-image {
   float: left;
