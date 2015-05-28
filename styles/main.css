@@ -7,7 +7,9 @@ html {
   box-sizing: inherit; }
 
 header {
-  height: 150px; }
+  height: 200px;
+  background-color: #80251d;
+  border-bottom: 3px solid #d6d6d6; }
 
 .container {
   max-width: 68em;
@@ -26,12 +28,16 @@ header {
   width: 250px;
   height: 100px;
   background-color: #F7F7F7;
-  text-align: center; }
+  text-align: center;
+  border-left: 3px solid #d6d6d6;
+  border-bottom: 3px solid #d6d6d6;
+  border-radius: 10px; }
 
 .content {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-color: #3e5e97; }
   .content::after {
     clear: both;
     content: "";
