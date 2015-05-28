@@ -61,12 +61,23 @@
 
   //Pulls special from menu API
 
-  // specialURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu/special';
+  specialURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu/special';
+  var specialID;
 
-  // $.getJSON(specialURL).success(function(response) {
-  //   $('.special').html('<span>' +  + '</span><span> ' + response.date_published + '</span><p>' + response.post + '</p>');
-  // }
-  //   );
+  $.getJSON(specialURL).success(function(response) {
+    specialID = response.menu_item_id;
+  }
+    );
+
+  $.getJSON(menuURL).success(function(response) {
+    // console.log(response.entrees);
+    response.entrees.filter(function(x) {
+      if(x.id == specialID) {
+        $('.special').html('<span>' + x.item + '</span><span> ' + x.price + '</span><p>' + x.description + '</p>');
+      }
+    })
+  });
+
 
 //Hides and displays content sections
 
@@ -78,7 +89,7 @@
 
   $('#story').on ('click', function() {
     $('.menu').removeClass('displayedsection');
-    $('.reserve').removeClass('displayedsection');
+    $('.reservations').removeClass('displayedsection');
     $('.story').addClass('displayedsection')
   });
 
