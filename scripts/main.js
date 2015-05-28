@@ -14,6 +14,27 @@ var getMenu = $.getJSON(menuURL).success(function(response) {
     '<h2>' + key + '</h2>';
   }))
 })
+
+
+$('#menu').on ('click', function() {
+  $('.story').removeClass('displayedsection');
+  $('.reserve').removeClass('displayedsection');
+  $('.menu').addClass('displayedsection')
+});
+
+$('#story').on ('click', function() {
+  $('.menu').removeClass('displayedsection');
+  $('.reserve').removeClass('displayedsection');
+  $('.store').addClass('displayedsection')
+});
+
+$('#reserve').on ('click', function() {
+  $('.story').removeClass('displayedsection');
+  $('.menu').removeClass('displayedsection');
+  $('.reserve').addClass('displayedsection')
+});
+
+
 // (function(response) {
 
   // $('#menu').html('<span>' + response.title + '</span><span>' + response.date_published + '</span><p>' + response.post + '</p>');
