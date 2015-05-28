@@ -1,4 +1,6 @@
 // $(document).ready( function () {
+
+      //Pulls latest news from API
   newsURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/news/latest';
 
   $.getJSON(newsURL).success(function(response) {
@@ -7,9 +9,11 @@
     );
 
   specialURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu/special';
+
+  //Pulls menu info from API
   menuURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/menu-1';
 
-
+      //Pulls appetizers from API
   var appTemplate = _.template($('#app-template').text());
 
   $.getJSON(menuURL, function(items){
@@ -19,23 +23,39 @@
   function processApps(items) {
     items.forEach(function(app){
       var $element = appTemplate(app);
-      $('.menu').append($element);
+      $('.app').append($element);
     });
   }
 
+      //Pulls entrees from API
+  var entTemplate = _.template($('#ent-template').text());
 
-//------
+  $.getJSON(menuURL, function(items){
+    processEnts(items.entrees);
+    });
 
-  // var appetiz;
+  function processEnts(items) {
+    items.forEach(function(ent){
+      var $element = entTemplate(ent);
+      $('.ent').append($element);
+    });
+  }
 
-  // $.getJSON(menuURL).success(function(x) {
-  //   // $('.menu').html('<span>Appetizers</span>');
-  //   appetiz = $('.menu').append(x.appetizers);
-  //   // $('.menu').prepend('<span> ' + x.appetizers.item + ' </span><span> ' + x.appetizers.price + ' </span><p> ' + x.appetizers.description + '</p>');
-  // });
+      //Pulls sides from API
+  var sideTemplate = _.template($('#side-template').text());
 
+  $.getJSON(menuURL, function(items){
+    processSides(items.sides);
+    });
 
-//----
+  function processSides(items) {
+    items.forEach(function(side){
+      var $element = sideTemplate(side);
+      $('.sides').append($element);
+    });
+  }
+
+//Hides and displays content sections
 
   $('#menu').on ('click', function() {
     $('.our-story').removeClass('displayedsection');
