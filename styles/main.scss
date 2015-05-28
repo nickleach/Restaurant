@@ -1,8 +1,14 @@
 @import "vendor/bourbon/bourbon";
 @import "vendor/neat/neat";
+// Header Styling
+
 header{
-  height: 150px;
+  height: 200px;
+  background-color: #80251d;
+  border-bottom: 3px solid #d6d6d6;
 }
+
+
 .container{
 @include outer-container;
 }
@@ -18,9 +24,18 @@ header{
   height: 100px;
   background-color: #F7F7F7;
   text-align: center;
+  border-left: 3px solid #d6d6d6;
+  border-bottom: 3px solid #d6d6d6;
+  border-radius: 10px;
 }
+
+
+// End Header Styling
+
+
 .content{
    @include outer-container;
+   background-color: #3e5e97;
 }
 .content-top{
  @include outer-container;
