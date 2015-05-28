@@ -106,7 +106,6 @@ header {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%; }
-
   .right-column:last-child {
     margin-right: 0; }
   .right-column ul {
@@ -114,18 +113,8 @@ header {
   .right-column li {
     background-color: #EBEBEB; }
 
-.right-column:last-child {
-  margin-right: 0; }
-
-.right-column ul {
-  list-style: none; }
-
-.right-column li {
-  background-color: #EBEBEB; }
-
 .hiddensection {
   visibility: hidden; }
 
 .displayedsection {
   visibility: visible; }
-
