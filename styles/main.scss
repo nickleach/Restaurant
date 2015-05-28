@@ -78,7 +78,6 @@ header{
   border-left: 1px solid darkgrey;
   border-bottom: none;
 }
-
 .right-column{
   @include span-columns(3);
   ul{

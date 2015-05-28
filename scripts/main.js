@@ -38,8 +38,8 @@
 //----
 
   $('#menu').on ('click', function() {
-    $('.story').removeClass('displayedsection');
-    $('.reserve').removeClass('displayedsection');
+    $('.our-story').removeClass('displayedsection');
+    $('.reservations').removeClass('displayedsection');
     $('.menu').addClass('displayedsection')
   });
 
@@ -50,11 +50,15 @@
   });
 
   $('#reserve').on ('click', function() {
-    $('.story').removeClass('displayedsection');
+    $('.our-story').removeClass('displayedsection');
     $('.menu').removeClass('displayedsection');
-    $('.reserve').addClass('displayedsection')
+    $('.reservations').addClass('displayedsection')
   });
 
+  $('.section-headers span').on('click', function(){
+    $('.section-headers span').removeClass('section-clicked');
+    $(this).addClass('section-clicked');
+  });
 
 // (function(response) {
 
