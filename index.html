@@ -38,9 +38,9 @@
       <div class="content-bottom">
       <div class="left-column">
       <div class="section-headers">
-        <span id='story' class="section-hidden">Our Story</span>
+        <span id='story'>Our Story</span>
         <span id='menu' class="section-clicked">Menu</span>
-        <span id='reserve' class="section-hidden">Reservations</span>
+        <span id='reserve'>Reservations</span>
       </div>
       <section class="our-story hiddensection">
         <p>
@@ -71,6 +71,16 @@
 
     </footer>
   </div>
+
+  <script type="template" id="app-template">
+      <div>
+        <span><%=  item %></span>
+        <span><%=  price %></span>
+        <p><%= description %></p>
+      </div>
+  </script>
+
+
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>
   <script src="scripts/main.js"></script>
