@@ -79,6 +79,11 @@ header {
   padding-bottom: 10px;
   border-bottom: 1px solid black; }
 
+<<<<<<< HEAD
+.three-columns li {
+  border-radius: 5px;
+  border: 1px solid #d6d6d6; }
+=======
 .column-text {
   padding-left: 10px; }
 
@@ -89,6 +94,7 @@ header {
 
 .special {
   text-align: center; }
+
 
 .main-image {
   float: left;
