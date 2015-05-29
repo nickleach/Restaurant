@@ -176,24 +176,46 @@ header {
   visibility: visible;
   padding-left: 50px; }
 
+.menu {
+  width: 100%;
+}
+
 .menuHeader {
   font-size: 24px;
+  width: 100%;
+}
+
+.menuTable {
+  width: 770px;
 }
 
 .dishTitle {
+  width: 650px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   font-size: 16px;
   font-weight: bold;
 }
 
+.price {
+  text-align: right;
+  width: 120px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+}
+
+
 .dishDesc {
+  padding-right: 20px;
   font-size: 13px;
-  width: 80%;
+  width: 650px;
+  height: 35px;
   border-right: 1px solid grey;
 }
 
 .menuIcon {
   width: 20px;
-  float: right;
 }
 
 footer {

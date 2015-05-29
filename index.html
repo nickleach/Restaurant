@@ -106,27 +106,42 @@
   </div>
 
   <script type="template" id="app-template">
-      <div>
-        <span class="dishTitle"><%=  item %></span>
-        <span><%=  price %></span>
-        <p class="dishDesc"><%= description %></p>
-      </div>
+      <tbody class="menuTable">
+        <tr class="topRow">
+          <td class="dishTitle"><%=  item %></td>
+          <td class="price"><%=  price %></td>
+        </tr>
+        <tr>
+          <td class="dishDesc"><%= description %><td>
+          <div></div>
+        </tr>
+      </tbody>
   </script>
 
     <script type="template" id="ent-template">
-      <div>
-        <span class="dishTitle"><%=  item %></span>
-        <span><%=  price %></span>
-        <p class="dishDesc"><%= description %></p>
-      </div>
+      <tbody class="menuTable">
+        <tr>
+          <td class="dishTitle"><%=  item %></td>
+          <td><%=  price %></td>
+        </tr>
+        <tr>
+          <td class="dishDesc"><%= description %></td>
+          <div></div>
+        </tr>
+      </tbody>
   </script>
 
   <script type="template" id="side-template">
-      <div>
-        <span class="dishTitle"><%=  item %></span>
-        <span><%=  price %></span>
-        <p class="dishDesc"><%= description %></p>
-      </div>
+      <tbody class="menuTable">
+        <tr>
+          <td class="dishTitle"><%=  item %></td>
+          <td><%=  price %></td>
+        </tr>
+        <tr>
+          <td class="dishDesc"><%= description %></td>
+          <div></div>
+        </tr>
+      </tbody>
   </script>
 
 
