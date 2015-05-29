@@ -77,11 +77,11 @@
         </p>
       </section>
       <section class="menu hiddensection">
-        <h2>Appetizers</h2>
+        <p class="menuHeader">APPETIZERS</p>
         <div class="app"></div>
-        <h2>Entrees</h2>
+        <p class="menuHeader">ENTREES</P>
         <div class="ent"></div>
-        <h2>Sides a la Carte</h2>
+        <p class="menuHeader">SIDES A LA CARTE</p>
         <div class="sides"></div>
 
       </section>
@@ -107,25 +107,25 @@
 
   <script type="template" id="app-template">
       <div>
-        <span><%=  item %></span>
+        <span class="dishTitle"><%=  item %></span>
         <span><%=  price %></span>
-        <p><%= description %></p>
+        <p class="dishDesc"><%= description %></p>
       </div>
   </script>
 
     <script type="template" id="ent-template">
       <div>
-        <span><%=  item %></span>
+        <span class="dishTitle"><%=  item %></span>
         <span><%=  price %></span>
-        <p><%= description %></p>
+        <p class="dishDesc"><%= description %></p>
       </div>
   </script>
 
   <script type="template" id="side-template">
       <div>
-        <span><%=  item %></span>
+        <span class="dishTitle"><%=  item %></span>
         <span><%=  price %></span>
-        <p><%= description %></p>
+        <p class="dishDesc"><%= description %></p>
       </div>
   </script>
 
