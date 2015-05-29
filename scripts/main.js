@@ -70,7 +70,6 @@
     );
 
   $.getJSON(menuURL).success(function(response) {
-    // console.log(response.entrees);
     response.entrees.filter(function(x) {
       if(x.id == specialID) {
         $('.special').html('<span>' + x.item + '</span><span> ' + x.price + '</span><p>' + x.description + '</p>');
@@ -113,46 +112,48 @@
     $(this).addClass('section-clicked');
   });
 
-// (function(response) {
-
-  // $('#menu').html('<span>' + response.title + '</span><span>' + response.date_published + '</span><p>' + response.post + '</p>');
-// }
-//   );
 
 
+  //Reservation Form
+  var reservation = [
+    { type: 'text', label: 'Full Name' },
+    { type: 'number', label: 'Number of Guests' },
+    { type: 'date', label: 'Date' },
+    { type: 'text', label: 'Special Notes' },
+    { type: 'text', label: 'Seating Preference'},
+    { type: 'Submit', label: 'Reserve Table'}
+  ];
 
-// var getMainPic = $.getJSON('http://api.flickr.com/services/rest/?');
+  function formBuilder(data) {
 
+    var formHTML = '<form>';
 
+    data.forEach( function (elem) {
 
-var newReservation = {
-  fullName: '',
-  numberofGuests: '',
-  date: '',
-  specialNotes: '',
-  seatingPref: ''
-}
+      if (elem.type === 'submit') {
 
-var templateString = $('#reservationFormatting').text();
+        formHTML += '<input type="' + elem.type + '" value="' + elem.label + '" />';
 
-var templateFunction = _.template(templateString);
+      } else {
 
-var finalHTML = templateFunction(newReservation);
+        formHTML += '<label>' + elem.label + '</label>';
+        formHTML += '<input type="' + elem.type + '" />';
+        formHTML += '</br></br>';
 
-function formBuilder(data) {
+      }
 
-  var formHTML = $('#formElement').text();
+    });
 
-  var formFunction = _.template(formHTML);
+    formHTML += '</form>';
 
-  data.forEach( function(elem) {
-    $('#reservationForm').append(formFunction(elem));
+      console.log(formHTML);
 
+    $('.reservations').html(formHTML);
 
-  });
+  }
 
+  formBuilder(reservation);
 
-}
 
 
 
