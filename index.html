@@ -96,14 +96,11 @@
       </section>
       </div>
       <div class="right-column">
-        <ul><h3>Food Photos</h3>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <h3>Food Photos</h3>
+        <ul class="food-pics">
+
         </ul>
-      </div>
+        </div>
       </div>
     </div>
     <footer>
@@ -152,7 +149,9 @@
         </tr>
       </tbody>
   </script>
-
+  <script type="template" id="food-images">
+    <img src="<%= url_m %>">
+  </script>
 
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>
