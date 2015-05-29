@@ -138,6 +138,11 @@ header{
 .border{
   border-bottom: 1px solid darkgrey;
 }
+.reservations{
+  form{
+    margin-top: 20px;
+  }
+}
 .right-column{
   @include span-columns(3);
   ul{
