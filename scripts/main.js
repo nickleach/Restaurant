@@ -177,9 +177,34 @@
   formBuilder(reservation);
 
 
+// Flickr stuff
+//Header image
+
+var flickrTemplate = _.template($('#header-img').text());
+
+var flickrKey = 'e037a9c4873e83b9f07785c0f8afad8a'
+
+var url = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKey +
+'&gallery_id=5704-72157653246527109&format=json&extras=url_m&callback=jsonFlickrApi';
 
 
 
+$.ajax(url, {
+ dataType: 'jsonp',
+ jsonpCallback: 'jsonFlickrApi',
+ success: function(data) {
+   var photos = data.photos.photo;
+   processFlickr(photos);
+ }
+})
+
+function processFlickr(pics) {
+
+ pics.forEach(function(pic) {
+   var $element = flickrTemplate(pic);
+   $('.main-image').append($element);
+ });
+};
 
 
 // })
