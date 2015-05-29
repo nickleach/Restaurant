@@ -60,14 +60,14 @@
       <div class="left-column">
       <div class="section-headers">
         <div class="border-left"></div>
-        <span id='story' class="border">Our Story</span>
+        <span id='story' class="section-clicked">Our Story</span>
         <div class="border-left"></div>
-        <span id='menu' class="section-clicked">Menu</span>
+        <span id='menu' class="border">Menu</span>
         <div class="border-left"></div>
         <span id='reserve' class="border">Reservations</span>
         <div class="border-right"></div>
       </div>
-      <section class="our-story hiddensection">
+      <section class="our-story displayedsection">
         <p>
           It all started back in 1969 with the idea of "food should be fun" by our founder, Bern Flasko. 
           <br>
@@ -82,16 +82,17 @@
           Füd was created by Bern in an effort to show the president that Creme Fraiche is a force to be reckoned with. He was originally approached by the Reagan Administration to start research on Creme Fraiche, but he had to decline because the administration did not access to powerful enough equipment to contain the taste that the Fraiche brought. He awaited 25 years for the presidancy to gain access to such equipment, and will be serving as a personal chef to the White House and all who are the non-believers of the Fraiche. 
         </p>
       </section>
-      <section class="menu displayedsection">
-        <h2>Appetizers</h2>
+      <section class="menu hiddensection">
+        <p class="menuHeader">APPETIZERS</p>
         <div class="app"></div>
-        <h2>Entrees</h2>
+        <p class="menuHeader">ENTREES</P>
         <div class="ent"></div>
-        <h2>Sides a la Carte</h2>
+        <p class="menuHeader">SIDES A LA CARTE</p>
         <div class="sides"></div>
 
       </section>
       <section class="reservations hiddensection">
+
       </section>
       </div>
       <div class="right-column">
@@ -109,28 +110,31 @@
 
     </footer>
   </div>
+  <script type="template" id="header-img">
+   <img src= "<%= url_m %>" width= 736px height= 349px>
+  </script>
 
   <script type="template" id="app-template">
       <div>
-        <span><%=  item %></span>
+        <span class="dishTitle"><%=  item %></span>
         <span><%=  price %></span>
-        <p><%= description %></p>
+        <p class="dishDesc"><%= description %></p>
       </div>
   </script>
 
     <script type="template" id="ent-template">
       <div>
-        <span><%=  item %></span>
+        <span class="dishTitle"><%=  item %></span>
         <span><%=  price %></span>
-        <p><%= description %></p>
+        <p class="dishDesc"><%= description %></p>
       </div>
   </script>
 
   <script type="template" id="side-template">
       <div>
-        <span><%=  item %></span>
+        <span class="dishTitle"><%=  item %></span>
         <span><%=  price %></span>
-        <p><%= description %></p>
+        <p class="dishDesc"><%= description %></p>
       </div>
   </script>
 

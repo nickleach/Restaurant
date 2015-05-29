@@ -25,6 +25,14 @@
     items.forEach(function(app){
       var $element = appTemplate(app);
       $('.app').append($element);
+      if (app.allergies == 1)
+        $('.app').append('<img class="menuIcon" src="images/allergy.png"></img>');
+      if (app.favorite == 1)
+        $('.app').append('<img class="menuIcon" src="images/thumbsup.png"></img>');
+      if (app.spicy == 1)
+        $('.app').append('<img class="menuIcon" src="images/spicy.png"></img>');
+      if (app.vegan == 1)
+        $('.app').append('<img class="menuIcon" src="images/vegan.png"></img>');
     });
   }
 
@@ -40,6 +48,14 @@
     items.forEach(function(ent){
       var $element = entTemplate(ent);
       $('.ent').append($element);
+      if (ent.allergies == 1)
+        $('.ent').append('<img class="menuIcon" src="images/allergy.png"></img>');
+      if (ent.favorite == 1)
+        $('.ent').append('<img class="menuIcon" src="images/thumbsup.png"></img>');
+      if (ent.spicy == 1)
+        $('.ent').append('<img class="menuIcon" src="images/spicy.png"></img>');
+      if (ent.vegan == 1)
+        $('.ent').append('<img class="menuIcon" src="images/vegan.png"></img>');
     });
   }
 
@@ -55,6 +71,14 @@
     items.forEach(function(side){
       var $element = sideTemplate(side);
       $('.sides').append($element);
+      if (side.allergies == 1)
+        $('.sides').append('<img class="menuIcon" src="images/allergy.png"></img>');
+      if (side.favorite == 1)
+        $('.sides').append('<img class="menuIcon" src="images/thumbsup.png"></img>');
+      if (side.spicy == 1)
+        $('.sides').append('<img class="menuIcon" src="images/spicy.png"></img>');
+      if (side.vegan == 1)
+        $('.sides').append('<img class="menuIcon" src="images/vegan.png"></img>');
     });
   }
 
@@ -70,7 +94,6 @@
     );
 
   $.getJSON(menuURL).success(function(response) {
-    // console.log(response.entrees);
     response.entrees.filter(function(x) {
       if(x.id == specialID) {
         $('.special').html('<span>' + x.item + '</span><span> ' + x.price + '</span><p>' + x.description + '</p>');
@@ -113,50 +136,75 @@
     $(this).addClass('section-clicked');
   });
 
-// (function(response) {
-
-  // $('#menu').html('<span>' + response.title + '</span><span>' + response.date_published + '</span><p>' + response.post + '</p>');
-// }
-//   );
 
 
+  //Reservation Form
+  var reservation = [
+    { type: 'text', label: 'Full Name' },
+    { type: 'number', label: 'Number of Guests' },
+    { type: 'date', label: 'Date' },
+    { type: 'text', label: 'Special Notes' },
+    { type: 'text', label: 'Seating Preference'},
+    { type: 'Submit', label: 'Reserve Table'}
+  ];
 
-// var getMainPic = $.getJSON('http://api.flickr.com/services/rest/?');
+  function formBuilder(data) {
+
+    var formHTML = '<form>';
+
+    data.forEach( function (elem) {
+
+      if (elem.type === 'submit') {
+
+        formHTML += '<input type="' + elem.type + '" value="' + elem.label + '" />';
+
+      } else {
+
+        formHTML += '<label>' + elem.label + '</label>';
+        formHTML += '<input type="' + elem.type + '" />';
+        formHTML += '</br></br>';
+
+      }
+
+    });
+
+    formHTML += '</form>';
+
+    $('.reservations').html(formHTML);
+
+  }
+
+  formBuilder(reservation);
+
+
+// Flickr stuff
+//Header image
+
+var flickrTemplate = _.template($('#header-img').text());
+
+var flickrKey = 'e037a9c4873e83b9f07785c0f8afad8a'
+
+var url = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKey +
+'&gallery_id=5704-72157653246527109&format=json&extras=url_m&callback=jsonFlickrApi';
 
 
 
-var newReservation = {
-  fullName: '',
-  numberofGuests: '',
-  date: '',
-  specialNotes: '',
-  seatingPref: ''
-}
+$.ajax(url, {
+ dataType: 'jsonp',
+ jsonpCallback: 'jsonFlickrApi',
+ success: function(data) {
+   var photos = data.photos.photo;
+   processFlickr(photos);
+ }
+})
 
-var templateString = $('#reservationFormatting').text();
+function processFlickr(pics) {
 
-var templateFunction = _.template(templateString);
-
-var finalHTML = templateFunction(newReservation);
-
-function formBuilder(data) {
-
-  var formHTML = $('#formElement').text();
-
-  var formFunction = _.template(formHTML);
-
-  data.forEach( function(elem) {
-    $('#reservationForm').append(formFunction(elem));
-
-
-  });
-
-
-}
-
-
-
-
+ pics.forEach(function(pic) {
+   var $element = flickrTemplate(pic);
+   $('.main-image').append($element);
+ });
+};
 
 
 // })
