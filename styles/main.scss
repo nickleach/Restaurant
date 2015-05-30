@@ -160,12 +160,85 @@ header{
 }
 
 .displayedsection {
-
   height: 1000px;
   visibility: visible;
   padding-left: 50px;
+}
+
+.menuHeader {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 0px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.menuDivider {
+  @include span-columns(12);
+  border-bottom: 1px solid #555;
+  margin-bottom: 25px;
+}
+
+.menuSect {
+  @include outer-container;
+}
+
+.menuTop {
+  @include span-columns(12);
+}
+
+.dishTitle {
+  @include span-columns(4);
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+}
+
+.dottedSpace {
+  @include span-columns(7.5);
+  border-bottom: 1px dashed grey;
+  height: 16px;
+  margin: 20px 0 10px 0;
+}
+
+.price {
+  @include span-columns(0.5);
+  @include omega;
+  margin: 20px 0 10px 0;
+  text-align: right;
+}
+
+.dishDesc {
+  @include span-columns(9);
+  display: inline-block;
+  float: left;
+}
+
+.menuIcon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: left;
 
 }
+
+.icon {
+  @include span-columns(0.5);
+  display: inline-block;
+  float: left;
+}
+
+.iconDiv {
+  @include span-columns(0.5);
+  height: 50px;
+  border-left: 1px #555 solid;
+  float: left;
+  display: inline-block;
+}
+
+
 // Nick's footer styling
 footer{
   height: 100px;
