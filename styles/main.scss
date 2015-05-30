@@ -234,7 +234,7 @@ header {
   margin-right: 2.35765%;
   width: 31.76157%;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   margin: 20px 0 10px 0; }
 
@@ -310,6 +310,26 @@ header {
 
 .iconDiv:last-child {
   margin-right: 0; }
+
+.tooltip {
+    display: inline;
+    position: relative;
+}
+
+.tooltipA:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    top: 50px;
+    color: #fff;
+    content: attr(title);
+    right: -20px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 215px;
+    height: 30px;
+}
 
 footer {
   height: 100px;
