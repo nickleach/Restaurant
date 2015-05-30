@@ -156,34 +156,57 @@
 
 
 // Flickr stuff
-//Header image
 
-var flickrTemplate = _.template($('#header-img').text());
 
-var flickrKey = 'e037a9c4873e83b9f07785c0f8afad8a'
 
-var url = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKey +
+var flickrKey = 'e037a9c4873e83b9f07785c0f8afad8a';
+
+var galleryID;
+
+var flickrUrl ='https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKey +
 '&gallery_id=5704-72157653246527109&format=json&extras=url_m&callback=jsonFlickrApi';
 
 
+//header Image
 
-$.ajax(url, {
+var flickrHeader = _.template($('#header-img').text());
+
+$.ajax(flickrUrl, {
  dataType: 'jsonp',
  jsonpCallback: 'jsonFlickrApi',
- success: function(data) {
-    console.log(data);
-   var photos = data.photos.photo;
-   processFlickr(photos);
+ success: function(x) {
+   var photos = x.photos.photo;
+   headerFlickr(photos);
  }
 })
 
-function processFlickr(pics) {
-
+function headerFlickr(pics) {
  pics.forEach(function(pic) {
-   var $element = flickrTemplate(pic);
+   var $element = flickrHeader(pic);
    $('.main-image').append($element);
  });
 };
 
+// Food Images
+var foodImages = _.template($('#food-images').text());
+var flickrFood = 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKey +
+'&gallery_id=5704-72157651339894593&format=json&extras=url_m&callback=jsonFlickrApi';
+
+
+$.ajax(flickrFood, {
+ dataType: 'jsonp',
+ jsonpCallback: 'jsonFlickrApi',
+ success: function(x) {
+   var photos = x.photos.photo;
+   foodPics(photos);
+ }
+})
+
+function foodPics(pics) {
+ pics.forEach(function(pic) {
+   var $element = foodImages(pic);
+   $('.food-pics').append($element);
+ });
+};
 
 // })
