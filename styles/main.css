@@ -13,7 +13,8 @@ header {
   height: 200px;
   background-color: #80251d;
   border-bottom: 3px solid #d6d6d6;
-  margin: 0; }
+  margin: 0;
+  position: relative; }
 
 #fudText {
   height: 200px;
@@ -34,14 +35,24 @@ header {
 
 .social {
   float: right;
-  margin: 30px;
-  width: 250px;
-  height: 100px;
+  margin-top: 25px;
+  width: 140px;
+  height: 70px;
   background-color: #F7F7F7;
   text-align: center;
-  border-left: 3px solid #d6d6d6;
-  border-bottom: 3px solid #d6d6d6;
-  border-radius: 10px; }
+  border: 1 px #E2E2E2;
+  border-radius: 3px;
+  font-size: 12px;
+  font-style: italic; }
+
+.smIcon {
+  width: 25px;
+  height: 25px;
+  display: inline-block; }
+
+.smIcon:hover {
+  padding: 1px;
+  border: solid black 1px; }
 
 .content {
   max-width: 68em;
