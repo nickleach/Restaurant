@@ -277,10 +277,15 @@ header {
   margin-right: 0; }
 
 .menuIcon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   display: inline-block;
-  float: left; }
+  float: left;
+  margin-top: 13px;
+  padding: 3px;
+  background-color: #f7f7f7;
+  border: #555 solid 1px;
+  border-radius: 5px; }
 
 .icon {
   float: left;
@@ -296,7 +301,7 @@ header {
 .iconDiv {
   float: left;
   display: block;
-  margin-right: 2.35765%;
+  margin-right: 0;
   width: 1.90725%;
   height: 50px;
   border-left: 1px #555 solid;

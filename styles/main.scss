@@ -1,32 +1,38 @@
-@import "vendor/bourbon/bourbon";
-@import "vendor/neat/neat";
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
 
 body {
-  background-color: #ffc686;
-}
+  background-color: #ffc686; }
 
-// Header Styling
-header{
+header {
   height: 200px;
   background-color: #80251d;
   border-bottom: 3px solid #d6d6d6;
-  margin: 0;
-}
+  margin: 0; }
+
 #fudText {
   height: 200px;
-  text-align: center;
-}
+  text-align: center; }
 
-.container{
-@include outer-container;
-}
-.logo{
-  float: left;
-  h1{
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
 
-  }
-}
-.social{
+.container::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.logo {
+  float: left; }
+
+.social {
   float: right;
   margin: 30px;
   width: 250px;
@@ -35,135 +41,154 @@ header{
   text-align: center;
   border-left: 3px solid #d6d6d6;
   border-bottom: 3px solid #d6d6d6;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
+.content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffedbf;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  border: 2px solid black; }
 
+.content::after {
+  clear: both;
+  content: "";
+  display: table; }
 
-// End Header Styling
+.content-top {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
 
+.content-top::after {
+  clear: both;
+  content: "";
+  display: table; }
 
-.content{
-   @include outer-container;
-   background-color: #ffedbf;
-   font-family: 'Yanone Kaffeesatz', sans-serif;
-   border: 2px solid black;
-}
-.content-top{
- @include outer-container;
- li{
-  @include span-columns(4);
+.content-top li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
   height: 240px;
   background-color: #EBEBEB;
   overflow: scroll;
   padding-right: 50px;
-  margin-left: -10px;
- }
-}
-.main-image{
+  margin-left: -10px; }
 
-}
+.content-top li:last-child {
+  margin-right: 0; }
 
-.three-columns{
-  h5{
-    padding-left: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid black;
-  }
-  li {
-    border-radius: 5px;
-    border: 1px solid #d6d6d6;
-  }
-}
-.column-text{
+.three-columns h5 {
   padding-left: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black; }
 
-}
-.news{
-  h6{
-    font-size: 20px;
-    text-align: center;
-    margin: 5px;
-  }
-}
-.special{
+.three-columns li {
+  border-radius: 5px;
+  border: 1px solid #d6d6d6; }
+
+.column-text {
+  padding-left: 10px; }
+
+.news h6 {
+  font-size: 20px;
   text-align: center;
-}
-.location{
+  margin: 5px; }
 
-}
-.main-image{
-  @include span-columns(12)
-}
-.three-columns{
+.special {
+  text-align: center; }
 
-}
-.content-bottom{
-  @include outer-container;
-}
-.left-column{
-  @include span-columns(9);
-  section{
-    overflow: hidden;
-  }
-}
-.section-headers{
-  margin-top: 20px;
-  span{
-    cursor: pointer;
-    font-size: 20px;
-    display: inline-block;
-    padding:5px;
-    padding-bottom: 0px;
-    margin-left: -3px;
-    margin-right: -3px;
-  }
-}
-.section-clicked{
+.main-image {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+
+.main-image:last-child {
+  margin-right: 0; }
+
+.content-bottom {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.content-bottom::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.left-column {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+
+.left-column:last-child {
+  margin-right: 0; }
+
+.left-column section {
+  overflow: hidden; }
+
+.section-headers {
+  margin-top: 20px; }
+
+.section-headers span {
+  cursor: pointer;
+  font-size: 20px;
+  display: inline-block;
+  padding: 5px;
+  padding-bottom: 0px;
+  margin-left: -3px;
+  margin-right: -3px; }
+
+.section-clicked {
   border-top: 1px solid darkgrey;
   border-right: 1px solid darkgrey;
   border-left: 1px solid darkgrey;
-  border-radius: 5px;
-}
-.border-right{
+  border-radius: 5px; }
+
+.border-right {
   border-bottom: 1px solid darkgrey;
   display: inline-block;
   width: 400px;
-  margin-bottom: -6px;
-}
-.border-left{
+  margin-bottom: -6px; }
+
+.border-left {
   width: 40px;
   border-bottom: 1px solid darkgrey;
   display: inline-block;
-  margin-bottom: -6px;
-}
-.border{
-  border-bottom: 1px solid darkgrey;
-}
-.reservations{
-  form{
-    margin-top: 20px;
-  }
-}
-.right-column{
-  @include span-columns(3);
-  ul{
-    list-style: none;
-  }
-  li{
-    background-color:#EBEBEB;
-  }
-}
+  margin-bottom: -6px; }
+
+.border {
+  border-bottom: 1px solid darkgrey; }
+
+.reservations form {
+  margin-top: 20px; }
+
+.right-column {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+
+.right-column:last-child {
+  margin-right: 0; }
+
+.right-column ul {
+  list-style: none; }
+
+.right-column li {
+  background-color: #EBEBEB; }
 
 .hiddensection {
-  height: 0;
-}
+  height: 0; }
 
 .displayedsection {
   height: 1000px;
   visibility: visible;
-  padding-left: 50px;
-}
+  padding-left: 50px; }
 
 .menuHeader {
   font-size: 24px;
@@ -171,76 +196,121 @@ header{
   font-style: italic;
   padding-top: 0px;
   margin-bottom: 0;
-  display: block;
-}
+  display: block; }
 
 .menuDivider {
-  @include span-columns(12);
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
   border-bottom: 1px solid #555;
-  margin-bottom: 25px;
-}
+  margin-bottom: 25px; }
+
+.menuDivider:last-child {
+  margin-right: 0; }
 
 .menuSect {
-  @include outer-container;
-}
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.menuSect::after {
+  clear: both;
+  content: "";
+  display: table; }
 
 .menuTop {
-  @include span-columns(12);
-}
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+
+.menuTop:last-child {
+  margin-right: 0; }
 
 .dishTitle {
-  @include span-columns(4);
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
-  margin: 20px 0 10px 0;
-}
+  margin: 20px 0 10px 0; }
+
+.dishTitle:last-child {
+  margin-right: 0; }
 
 .dottedSpace {
-  @include span-columns(7.5);
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 61.61588%;
   border-bottom: 1px dashed grey;
   height: 16px;
-  margin: 20px 0 10px 0;
-}
+  margin: 20px 0 10px 0; }
+
+.dottedSpace:last-child {
+  margin-right: 0; }
 
 .price {
-  @include span-columns(0.5);
-  @include omega;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 1.90725%;
+  margin-right: 0;
   margin: 20px 0 10px 0;
-  text-align: right;
-}
+  text-align: right; }
+
+.price:last-child {
+  margin-right: 0; }
 
 .dishDesc {
-  @include span-columns(9);
-  display: inline-block;
   float: left;
-}
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  display: inline-block;
+  float: left; }
+
+.dishDesc:last-child {
+  margin-right: 0; }
 
 .menuIcon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   display: inline-block;
   float: left;
-
-}
+  margin-top: 13px;
+  padding: 3px;
+  background-color: #f7f7f7;
+  border: #555 solid 1px;
+  border-radius: 5px; }
 
 .icon {
-  @include span-columns(0.5);
-  display: inline-block;
   float: left;
-}
+  display: block;
+  margin-right: 2.35765%;
+  width: 1.90725%;
+  display: inline-block;
+  float: left; }
+
+.icon:last-child {
+  margin-right: 0; }
 
 .iconDiv {
-  @include span-columns(0.5);
+  float: left;
+  display: block;
+  margin-right: 0;
+  width: 1.90725%;
   height: 50px;
   border-left: 1px #555 solid;
   float: left;
-  display: inline-block;
-}
+  display: inline-block; }
 
+.iconDiv:last-child {
+  margin-right: 0; }
 
-// Nick's footer styling
-footer{
+footer {
   height: 100px;
-  border-top: 1px solid darkgrey;
-}
+  border-top: 1px solid darkgrey; }
