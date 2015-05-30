@@ -25,16 +25,8 @@
     items.forEach(function(app){
       var $element = appTemplate(app);
       $('.app').append($element);
-      if (app.allergies == 1)
-        $('.app').append('<img class="menuIcon" src="images/allergy.png"></img>');
-      if (app.favorite == 1)
-        $('.app').append('<img class="menuIcon" src="images/thumbsup.png"></img>');
-      if (app.spicy == 1)
-        $('.app').append('<img class="menuIcon" src="images/spicy.png"></img>');
-      if (app.vegan == 1)
-        $('.app').append('<img class="menuIcon" src="images/vegan.png"></img>');
-    });
-  }
+  });
+    }
 
 
       //Pulls entrees from API
@@ -48,16 +40,9 @@
     items.forEach(function(ent){
       var $element = entTemplate(ent);
       $('.ent').append($element);
-      if (ent.allergies == 1)
-        $('.ent').append('<img class="menuIcon" src="images/allergy.png"></img>');
-      if (ent.favorite == 1)
-        $('.ent').append('<img class="menuIcon" src="images/thumbsup.png"></img>');
-      if (ent.spicy == 1)
-        $('.ent').append('<img class="menuIcon" src="images/spicy.png"></img>');
-      if (ent.vegan == 1)
-        $('.ent').append('<img class="menuIcon" src="images/vegan.png"></img>');
-    });
-  }
+  });
+    }
+
 
 
       //Pulls sides from API
@@ -70,17 +55,10 @@
   function processSides(items) {
     items.forEach(function(side){
       var $element = sideTemplate(side);
-      $('.sides').append($element);
-      if (side.allergies == 1)
-        $('.sides').append('<img class="menuIcon" src="images/allergy.png"></img>');
-      if (side.favorite == 1)
-        $('.sides').append('<img class="menuIcon" src="images/thumbsup.png"></img>');
-      if (side.spicy == 1)
-        $('.sides').append('<img class="menuIcon" src="images/spicy.png"></img>');
-      if (side.vegan == 1)
-        $('.sides').append('<img class="menuIcon" src="images/vegan.png"></img>');
-    });
-  }
+      $('.sides').append($element)
+  });
+    }
+
 
 
   //Pulls special from menu API
@@ -193,6 +171,7 @@ $.ajax(url, {
  dataType: 'jsonp',
  jsonpCallback: 'jsonFlickrApi',
  success: function(data) {
+    console.log(data);
    var photos = data.photos.photo;
    processFlickr(photos);
  }
