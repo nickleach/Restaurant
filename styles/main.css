@@ -105,6 +105,15 @@ header {
   font-size: 16px;
   font-weight: bold; }
 
+.news {
+  position: relative; }
+
+.readMore {
+  position: absolute;
+  top: 160px;
+  right: 0px;
+  background: #EBEBEB; }
+
 .postTitle {
   display: inline-block;
   float: left;
@@ -117,12 +126,6 @@ header {
 
 .postContent {
   clear: both; }
-
-.truncate {
-  height: 150px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
 
 .special {
   text-align: center; }
