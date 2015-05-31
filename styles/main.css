@@ -110,23 +110,23 @@ header {
 
 .readMore {
   position: absolute;
-  top: 160px;
+  top: 157px;
   right: 0px;
   background: #EBEBEB; }
 
 .postTitle {
   display: inline-block;
   float: left;
-  margin-bottom: 10px; }
+  margin-bottom: 13px; }
 
 .postDate {
   display: inline-block;
-  float: right;
-  margin-right: 10px; }
+  float: right; }
 
 .postContent {
   clear: both;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 10px; }
 
 .special {
   text-align: center; }
