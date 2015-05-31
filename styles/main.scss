@@ -397,6 +397,43 @@ header {
     height: 30px;
 }
 
+.formLabel {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 5px;
+}
+
+.fullName {
+  width: 350px;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #A9A9A9;
+}
+
+.guestNum {
+  width: 150px;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #A9A9A9;
+}
+
+.reserveDate {
+  width: 150px;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #A9A9A9;
+}
+
+.specialNotes {
+  width: 400px;
+  height: 85px;
+  border-radius: 3px;
+  border: 1px solid #A9A9A9;
+}
+
+
+
 footer {
   height: 100px;
   border-top: 1px solid darkgrey; }

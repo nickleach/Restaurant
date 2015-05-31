@@ -118,12 +118,12 @@
 
   //Reservation Form
   var reservation = [
-    { type: 'text', label: 'Full Name' },
-    { type: 'number', label: 'Number of Guests' },
-    { type: 'date', label: 'Date' },
-    { type: 'text', label: 'Special Notes' },
-    { type: 'text', label: 'Seating Preference'},
-    { type: 'Submit', label: 'Reserve Table'}
+    { type: 'text', CSS: 'fullName', label: 'Full Name' },
+    { type: 'number', CSS: 'guestNum', label: 'Number of Guests' },
+    { type: 'date', CSS: 'reserveDate', label: 'Date' },
+    { type: 'text', CSS: 'specialNotes', label: 'Special Notes' },
+    { type: 'text', CSS: 'seatPref', label: 'Seating Preference'},
+    { type: 'Submit', CSS: 'submitBtn', label: 'Reserve Table'}
   ];
 
   function formBuilder(data) {
@@ -138,8 +138,8 @@
 
       } else {
 
-        formHTML += '<label>' + elem.label + '</label>';
-        formHTML += '<input type="' + elem.type + '" />';
+        formHTML += '<label class="formLabel">' + elem.label + '</label>';
+        formHTML += '<input class="' + elem.CSS + '" type="' + elem.type + '" />';
         formHTML += '</br></br>';
 
       }
