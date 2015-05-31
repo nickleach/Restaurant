@@ -245,9 +245,14 @@ header {
 
 .hiddensection {
   height: 0; }
+.menudisplayedsection{
+  height: 2000px;
+  visibility: visible;
+  padding-left: 50px;
+}
 
 .displayedsection {
-  height: 2000px;
+  height: 800px;
   visibility: visible;
   padding-left: 50px; }
 
