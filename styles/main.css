@@ -85,7 +85,6 @@ header {
   height: 240px;
   background-color: #EBEBEB;
   overflow: scroll;
-  padding-right: 50px;
   margin-left: -10px; }
 
 .content-top li:last-child {
@@ -93,7 +92,6 @@ header {
 
 .three-columns h5 {
   padding-left: 10px;
-  padding-bottom: 10px;
   border-bottom: 1px solid black; }
 
 .three-columns li {
@@ -103,10 +101,28 @@ header {
 .column-text {
   padding-left: 10px; }
 
-.news h6 {
-  font-size: 20px;
-  text-align: center;
-  margin: 5px; }
+.news span {
+  font-size: 16px;
+  font-weight: bold; }
+
+.postTitle {
+  display: inline-block;
+  float: left;
+  margin-bottom: 10px; }
+
+.postDate {
+  display: inline-block;
+  float: right;
+  margin-right: 10px; }
+
+.postContent {
+  clear: both; }
+
+.truncate {
+  height: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .special {
   text-align: center; }
