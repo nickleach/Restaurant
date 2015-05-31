@@ -5,7 +5,7 @@
   newsURL = 'http://private-anon-fb178ad55-restaurantapi.apiary-mock.com/news/latest';
 
   $.getJSON(newsURL).success(function(response) {
-    $('.news').html('<div class="titleDate"><span class="postTitle">' + response.title + '</span><span class="postDate"> ' + response.date_published + '</span></div><p class="postContent truncate">' + response.post + '</p>');
+    $('.news').html('<div class="titleDate"><span class="postTitle">' + response.title + '</span><span class="postDate"> ' + response.date_published + '</span></div><p class="postContent">' + response.post + '</p><a href="#"><span class="readMore">...Read More</span></a> ');
   }
     );
 
