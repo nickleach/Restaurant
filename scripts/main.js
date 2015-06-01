@@ -74,7 +74,7 @@
   $.getJSON(menuURL).success(function(response) {
     response.entrees.filter(function(x) {
       if(x.id == specialID) {
-        $('.special').html('<span>' + x.item + '</span><span> ' + x.price + '</span><p>' + x.description + '</p>');
+        $('.special').html('<span class="specialTitle">' + x.item + '</span><span>.........</span><span class="specialPrice"> ' + x.price + '</span><p class="specialDesc">' + x.description + '</p>');
       }
     })
   });

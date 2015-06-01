@@ -110,8 +110,12 @@ header {
 .readMore {
   position: absolute;
   top: 157px;
-  right: 0px;
-  background: #EBEBEB; }
+  right: 10px;
+  background: #EBEBEB;
+  color: black; }
+
+.readMore:hover {
+  border-bottom: 1px black solid; }
 
 .postTitle {
   display: inline-block;
@@ -120,15 +124,29 @@ header {
 
 .postDate {
   display: inline-block;
-  float: right; }
+  float: right;
+  padding-right: 10px; }
 
 .postContent {
   clear: both;
   overflow: hidden;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-right: 10px; }
 
-.special {
-  text-align: center; }
+.specialImg {
+  width: 265px;
+  height: 100px;
+  margin-left: 33px; }
+
+.specialTitle {
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px; }
+
+.specialPrice {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px; }
 
 .location {
   text-align: center; }
@@ -147,7 +165,15 @@ header {
   display: inline-block;
   font-size: 13px;
   font-weight: bold;
-  padding: 5px; }
+  padding: 5px 5px 0px 5px; }
+
+.ML {
+  color: black;
+  text-decoration: none;
+  font-weight: bold; }
+
+.ML:hover {
+  border-bottom: black 1px solid; }
 
 .main-image {
   float: left;
