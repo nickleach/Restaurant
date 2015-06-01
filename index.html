@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/vendor/normalize.css">
   <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link href="styles/vendor/responsiveslides.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
 </head>
@@ -35,8 +36,6 @@
     <div class="content">
 
     <!-- Top Content Section -->
-        <div class="main-image mainImage css-slideshow">
-        </div>
       <div class="content-top">
 
         <ul class="three-columns">
@@ -211,10 +210,7 @@
     </div>
   </script>
 
-  <!-- Image slideshow -->
-  <script type="template" id="header-img">
-    <figure><img class="mainPic" src="<%= url_m %>"></figure>
-  </script>
+
   <!-- Food images (rightside) -->
   <script type="template" id="food-images">
     <li> <img src="<%= url_m %>" width= 200px></li>
@@ -225,7 +221,7 @@
   </script>
   <script src="scripts/vendor/jquery.min.js"></script>
   <script src="scripts/vendor/underscore.min.js"></script>
-
+  <script src="scripts/vendor/responsiveslides.js"></script>
   <script src="scripts/main.js"></script>
 
 </body>

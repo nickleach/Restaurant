@@ -167,21 +167,6 @@ var flickrUrl = function(galleryID){
   return 'https://api.flickr.com/services/rest/?&method=flickr.galleries.getPhotos&api_key=' + flickrKey +
 '&gallery_id='+ galleryID+ '&extras=url_m&format=json&nojsoncallback=1';
 }
-//Header Image
-
-var flickrHeader = _.template($('#header-img').text());
-
- $.getJSON(flickrUrl('132848138-72157653246527109')).success(function(x) {
-   var pics = x.photos.photo;
-   headerFlickr(pics);
- })
-
-function headerFlickr(pics) {
- pics.forEach(function(pic) {
-   var $element = flickrHeader(pic);
-   $('.css-slideshow').append($element);
- });
-};
 
 // Food Images
 var foodImages = _.template($('#food-images').text());
@@ -213,6 +198,5 @@ function specialFlickr(pics){
     $('.special-images').append($element);
   });
 };
-
 
 // })
