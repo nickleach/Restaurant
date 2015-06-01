@@ -373,7 +373,7 @@ figure:nth-child(4) {
   list-style: none; }
 
 .right-column li {
-  background-color: #EBEBEB; }
+  background-color: none; }
 
 .hiddensection {
   height: 0; }
