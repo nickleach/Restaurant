@@ -61,7 +61,34 @@ header {
     border: solid black 1px;
   }
 
+
+// Bern and his story
+
+.bern {
+  margin-left: 277px;
+  border-radius: 5px;
+  border: 1px solid #EBEBEB;
+}
+.bernContainer {
+
+}
+.bernCap {
+  font-size: .5em;
+  text-align: center;
+}
+
+.bernP {
+  background-color: #EBEBEB;
+  padding: 4px;
+  border-radius: 3px;
+  border: 1px solid #d6d6d6;
+
+}
+
 // General Body
+
+
+
 
 .content {
   max-width: 68em;
@@ -249,6 +276,7 @@ figure {
   padding: 8px 12px;
   opacity: 0;
   transition: opacity .5s;
+  border-top-left-radius: 20px;
 }
 .css-slideshow:hover figure figcaption{
   transition: opacity .5s;
@@ -320,23 +348,8 @@ figure:nth-child(4) {
   }
 }
 
-@-webkit-keyframes xfade {
- 0%{
-    opacity: 1;
-  }
-  25% {
-    opacity:1;
-  }
-  45% {
-    opacity:0;
-  }
-  65%{
-    opacity: 0;
-  }
-  100% {
-    opacity:1;
-  }
-}
+
+
 
 // End of Slide
 
