@@ -35,8 +35,31 @@
     <div class="content">
 
     <!-- Top Content Section -->
-        <div class="main-image mainImage css-slideshow">
-        </div>
+<div class="css-slideshow">
+<figure>
+<img src="images/image1.jpg" class="sliderImages">
+<figcaption>Main Dining Room</figcaption> 
+</figure> 
+
+<figure>
+<img src="images/image2.jpg" class="sliderImages">
+<figcaption>The Kitchen</figcaption> 
+</figure> 
+
+<figure>
+<img src="images/image3.jpg" class="sliderImages">
+<figcaption>Secondary Dining Room</figcaption> 
+</figure> 
+
+<figure>
+<img src="images/image4.jpg" class="sliderImages">
+<figcaption>Outdoors</figcaption> 
+</figure>
+
+</div>  
+
+
+        <!-- End slide Show -->
       <div class="content-top">
 
         <ul class="three-columns">
@@ -212,12 +235,13 @@
   </script>
 
   <!-- Image slideshow -->
-  <script type="template" id="header-img">
-    <figure><img class="mainPic" src="<%= url_m %>"></figure>
-  </script>
+<!--   // 
+  //   <figure><img class="mainPic" src="<%= url_m %>" style="width: 1000px;
+  //   height: 390px" class="slides" >
+  //  -->
   <!-- Food images (rightside) -->
   <script type="template" id="food-images">
-    <li> <img src="<%= url_m %>" width= 200px></li>
+    <li> <img src="<%= url_m %>" width= 200px class="foods"></li>
   </script>
   <!-- Food special-image -->
   <script type="template" id="special-image">

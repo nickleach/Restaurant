@@ -69,7 +69,8 @@ header {
 .content-top {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-top: 10px; }
 
 .content-top::after {
   clear: both;
@@ -181,15 +182,23 @@ header {
   margin-right: 2.35765%;
   width: 100%; }
 
+figure {
+  border-radius: 20px; }
+
+.sliderImages {
+  width: 1000px;
+  height: 390px;
+  border-radius: 20px; }
+
 .css-slideshow {
   position: relative;
-  max-width: 495px;
   height: 370px;
-  margin: 5em auto 0.5em auto; }
+  margin: 2em auto 0.5em auto;
+  border-radius: 20px;
+  padding-left: 40px; }
 
-.slide {
+.css-slideshow figure {
   margin: 0;
-  max-width: 495px;
   height: 370px;
   background: #000;
   position: absolute; }
@@ -225,40 +234,70 @@ header {
   opacity: 0; }
 
 figure:nth-child(1) {
-  animation: xfade 48s 42s infinite; }
+  animation: xfade 22s infinite;
+  -webkit-animation: xfade 4250ms infinite; }
 
 figure:nth-child(2) {
-  animation: xfade 48s 36s infinite; }
+  animation: xfade 12s infinite;
+  -webkit-animation: xfade 8500ms infinite; }
 
 figure:nth-child(3) {
-  animation: xfade 48s 30s infinite; }
+  animation: xfade 4s infinite;
+  -webkit-animation: xfade 17000ms infinite; }
 
 figure:nth-child(4) {
-  animation: xfade 48s 24s infinite; }
-
-figure:nth-child(5) {
-  animation: xfade 48s 18s infinite; }
-
-figure:nth-child(6) {
-  animation: xfade 48s 12s infinite; }
-
-figure:nth-child(7) {
-  animation: xfade 48s 6s infinite; }
-
-figure:nth-child(8) {
-  animation: xfade 48s 0s infinite; }
+  animation: xfade 0s infinite;
+  -webkit-animation: xfade 34000ms infinite; }
 
 @keyframes xfade {
   0% {
     opacity: 1; }
-  10.5% {
+  25% {
     opacity: 1; }
-  12.5% {
+  45% {
     opacity: 0; }
-  98% {
+  65% {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@keyframes xfade {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 1; }
+  45% {
+    opacity: 0; }
+  65% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes xfade {
+  0% {
+    opacity: 1; }
+  25% {
+    opacity: 1; }
+  45% {
+    opacity: 0; }
+  65% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.food-pics {
+  padding: 0;
+  margin-left: 0;
+  text-align: center;
+  background-color: #FFEDBF; }
+
+.foods {
+  border-radius: 10px; }
+
+.foods:hover {
+  width: 250px;
+  height: 170px;
+  cursor: pointer; }
 
 .main-image:last-child {
   margin-right: 0; }
