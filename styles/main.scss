@@ -1,5 +1,7 @@
 // General Styling
 
+
+
 html {
   box-sizing: border-box; }
 
@@ -211,15 +213,20 @@ header {
   margin-right: 2.35765%;
   width: 100%; }
 
+// beggining of slide
+.slides {
+  display: inline;
+}
+
 .css-slideshow{
   position: relative;
-  max-width: 495px;
-  height: 370px;
+  max-width: 800px;
+  height: 410px;
   margin: 5em auto .5em auto;
 }
 .slide{
   margin: 0;
-  max-width: 495px;
+  max-width: 800px;
   height: 370px;
   background: #000;
   position: absolute;
@@ -227,22 +234,10 @@ header {
 .css-slideshow img{
   box-shadow: 0 0 2px #666;
 }
-.css-slideshow figcaption{
-  position: absolute;
-  top: 0;
-  color: #fff;
-  background: rgba(0,0,0, .3);
-  font-size: .8em;
-  padding: 8px 12px;
-  opacity: 0;
-  transition: opacity .5s;
-}
-.css-slideshow:hover figure figcaption{
-  transition: opacity .5s;
-  opacity: 1;
-}
+
+
 .css-slideshow-attr{
-  max-width: 495px;
+  max-width: 800px;
   text-align: right;
   font-size: .7em;
   font-style: italic;
@@ -255,29 +250,12 @@ header {
   opacity:0;
 }
 figure:nth-child(1) {
-  animation: xfade 48s 42s infinite;
+  animation: xfade 15s 15s infinite;
 }
 figure:nth-child(2) {
-  animation: xfade 48s 36s infinite;
+  animation: xfade 15s 15s infinite;
 }
-figure:nth-child(3) {
-  animation: xfade 48s 30s infinite;
-}
-figure:nth-child(4) {
-  animation: xfade 48s 24s infinite;
-}
-figure:nth-child(5) {
-  animation: xfade 48s 18s infinite;
-}
-figure:nth-child(6) {
-  animation: xfade 48s 12s infinite;
-}
-figure:nth-child(7) {
-  animation: xfade 48s 6s infinite;
-}
-figure:nth-child(8) {
-  animation: xfade 48s 0s infinite;
-}
+
 
 @keyframes xfade{
   0%{
@@ -296,6 +274,27 @@ figure:nth-child(8) {
     opacity: 1;
   }
 }
+
+// End of Slide
+
+// food pics
+
+
+.food-pics {
+  padding: 0;
+  margin-left: 0;
+  text-align: center;
+  background-color: #FFEDBF;
+}
+.foods {
+  border-radius: 10px;
+}
+.foods:hover {
+  width: 250px;
+  height: 170px;
+  cursor: pointer;
+}
+// end food pics
 
 .main-image:last-child {
   margin-right: 0; }
