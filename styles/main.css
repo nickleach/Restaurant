@@ -81,8 +81,14 @@ header {
 .content-top {
   max-width: 68em;
   margin-left: auto;
+  margin-right: auto; }
+
+.topimage {
   margin-right: auto;
   padding-top: 10px; }
+
+.topimage ul {
+  width: 100%; }
 
 .content-top::after {
   clear: both;
@@ -147,7 +153,6 @@ header {
   margin-right: 10px; }
 
 .specialImg {
-<<<<<<< HEAD
   width: 100%; }
 
 .special-images {
@@ -157,13 +162,9 @@ header {
   overflow: auto;
   margin-right: 10px;
   margin-left: 10px; }
-=======
-  width: 45%;
-  margin-top: -10px; }
 
 .special-images {
   text-align: center; }
->>>>>>> devnick
 
 .specialTitle {
   font-weight: bold;
@@ -213,8 +214,6 @@ header {
   margin-right: 2.35765%;
   width: 100%; }
 
-<<<<<<< HEAD
-=======
 figure {
   border-radius: 20px; }
 
@@ -324,7 +323,7 @@ figure:nth-child(4) {
   height: 170px;
   cursor: pointer; }
 
->>>>>>> dev
+> > > > > > > dev
 .main-image:last-child {
   margin-right: 0; }
 
