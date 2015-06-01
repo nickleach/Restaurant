@@ -39,7 +39,7 @@ header {
   height: 70px;
   background-color: #F7F7F7;
   text-align: center;
-  border: 1 px #E2E2E2;
+  border: 1px solid #E2E2E2;
   border-radius: 3px;
   font-size: 12px;
   font-style: italic; }
@@ -301,7 +301,8 @@ figure:nth-child(8) {
   border-top: 1px solid darkgrey;
   border-right: 1px solid darkgrey;
   border-left: 1px solid darkgrey;
-  border-radius: 5px; }
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
 
 .border-right {
   border-bottom: 1px solid darkgrey;
