@@ -38,7 +38,7 @@ header {
   height: 70px;
   background-color: #632528;
   text-align: center;
-  border: 1px solid #E2E2E2;
+  border: 1px solid black;
   border-radius: 3px;
   font-size: 12px;
   font-style: italic;
@@ -63,16 +63,13 @@ header {
   text-align: center; }
 
 .bernP {
-  background-color: #EBEBEB;
   padding: 4px;
-  border-radius: 3px;
-  border: 1px solid #d6d6d6; }
+  border-radius: 3px; }
 
 .content {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffedbf;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   border-top: 2px solid black; }
 
@@ -112,7 +109,7 @@ header {
 
 .three-columns li {
   border-radius: 5px;
-  border: 1px solid #d6d6d6; }
+  border: 1px solid black; }
 
 .column-text {
   padding-left: 10px; }
@@ -356,13 +353,15 @@ figure:nth-child(4) {
   border-top: 1px solid darkgrey;
   border-right: 1px solid darkgrey;
   border-left: 1px solid darkgrey;
+  border-bottom: 1px solid #FFEDBF;
   border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
+  border-top-right-radius: 5px;
+  background-color: #FFEDBF; }
 
 .border-right {
   border-bottom: 1px solid darkgrey;
   display: inline-block;
-  width: 400px;
+  width: 491px;
   margin-bottom: -6px; }
 
 .border-left {
@@ -398,12 +397,14 @@ figure:nth-child(4) {
 .menudisplayedsection {
   height: 1760px;
   visibility: visible;
-  padding-left: 50px; }
+  padding-left: 50px;
+  background-color: #FFEDBF; }
 
 .displayedsection {
   height: 800px;
   visibility: visible;
-  padding-left: 50px; }
+  padding-left: 50px;
+  background-color: #FFEDBF; }
 
 .menuHeader {
   font-size: 24px;
