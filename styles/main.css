@@ -15,7 +15,7 @@ header {
   position: relative; }
 
 .headLogo {
-  margin-top: 30px;
+  margin-top: 25px;
   height: 80px; }
 
 .container {
@@ -38,7 +38,6 @@ header {
   height: 70px;
   background-color: #632528;
   text-align: center;
-  border: 1px solid black;
   border-radius: 3px;
   font-size: 12px;
   font-style: italic;
@@ -47,7 +46,8 @@ header {
 .smIcon {
   width: 25px;
   height: 25px;
-  display: inline-block; }
+  display: inline-block;
+  background-color: #632528; }
 
 .smIcon:hover {
   padding: 1px;
@@ -108,8 +108,7 @@ header {
   border-bottom: 1px solid black; }
 
 .three-columns li {
-  border-radius: 5px;
-  border: 1px solid black; }
+  border-radius: 5px; }
 
 .column-text {
   padding-left: 10px; }
@@ -123,10 +122,10 @@ header {
 
 .readMore {
   position: absolute;
-  top: 157px;
-  right: 10px;
-  background: #EBEBEB;
-  color: black; }
+  top: 158px;
+  right: 11px;
+  background: #632528;
+  color: ivory; }
 
 .readMore:hover {
   border-bottom: 1px black solid; }
@@ -193,12 +192,12 @@ header {
   padding: 5px 5px 0px 5px; }
 
 .ML {
-  color: black;
+  color: ivory;
   text-decoration: none;
   font-weight: bold; }
 
 .ML:hover {
-  border-bottom: black 1px solid; }
+  border-bottom: ivory 1px solid; }
 
 .main-image {
   float: left;
@@ -301,11 +300,14 @@ figure:nth-child(4) {
 .food-pics {
   padding: 0;
   margin-left: 0;
-  text-align: center;
-  background-color: #FFEDBF; }
+  text-align: center; }
+
+.food-pics li {
+  margin-bottom: 15px; }
 
 .foods {
-  border-radius: 10px; }
+  border-radius: 10px;
+  border: #632528 solid 1px; }
 
 .foods:hover {
   width: 250px;
@@ -574,6 +576,9 @@ figure:nth-child(4) {
   height: 85px;
   border-radius: 3px;
   border: 1px solid #A9A9A9; }
+
+.foodpicsHead {
+  margin-left: 30px; }
 
 footer {
   height: 100px;
