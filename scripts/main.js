@@ -179,7 +179,7 @@ var flickrHeader = _.template($('#header-img').text());
 function headerFlickr(pics) {
  pics.forEach(function(pic) {
    var $element = flickrHeader(pic);
-   $('.main-image').append($element);
+   $('.css-slideshow').append($element);
  });
 };
 

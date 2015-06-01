@@ -35,10 +35,10 @@
     <div class="content">
 
     <!-- Top Content Section -->
-
-      <div class="content-top">
-        <div class="main-image">
+        <div class="main-image mainImage css-slideshow">
         </div>
+      <div class="content-top">
+
         <ul class="three-columns">
           <li>
             <h5>Latest News</h5>
@@ -133,9 +133,6 @@
   <!-- Main Image Template -->
 
   </div>
-  <script type="template" id="header-img">
-  <img src= "<%= url_m %>"  class="cut">
-  </script>
 
   <!-- Menu Templates -->
 
@@ -214,13 +211,15 @@
     </div>
   </script>
 
-  <script type="template" id="main-image">
-    <img class="mainPic" src="<%= url_m %>">
+  <!-- Image slideshow -->
+  <script type="template" id="header-img">
+    <figure><img class="mainPic" src="<%= url_m %>"></figure>
   </script>
-
+  <!-- Food images (rightside) -->
   <script type="template" id="food-images">
     <li> <img src="<%= url_m %>" width= 200px></li>
   </script>
+  <!-- Food special-image -->
   <script type="template" id="special-image">
     <img class="specialImg" src='<%= url_m %>' width= 100px>
   </script>
