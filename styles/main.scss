@@ -43,12 +43,14 @@ header {
   margin-top: 25px;
   width: 140px;
   height: 70px;
-  background-color: #F7F7F7;
+  background-color: #632528;
   text-align: center;
   border: 1px solid #E2E2E2;
   border-radius: 3px;
   font-size: 12px;
-  font-style: italic; }
+  font-style: italic;
+  color: ivory;
+}
 
 .smIcon {
   width: 25px;
@@ -88,12 +90,13 @@ header {
   display: table; }
 
 .content-top li {
+  color: ivory;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
   height: 240px;
-  background-color: #EBEBEB;
+  background-color: #632528;
   overflow: hidden;
   margin-left: -10px; }
 
@@ -156,11 +159,16 @@ header {
 // Daily Special Section
 
 .specialImg {
-  width: 265px;
-  height: 100px;
-  margin-left: 33px;
-   }
-
+  width: 100%;
+}
+.special-images{
+  display: block;
+  text-align: center;
+  height: 50%;
+  overflow: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 .specialTitle {
   font-weight: bold;
   display: inline-block;
@@ -171,6 +179,11 @@ header {
   font-weight: bold;
   display: inline-block;
   margin-right: 10px;
+}
+.specialDesc{
+  font-size: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
 // Location Section
