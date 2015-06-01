@@ -11,7 +11,6 @@ body {
 
 header {
   height: 120px;
-  background-color: #80251d;
   margin: 0;
   position: relative; }
 
@@ -73,7 +72,7 @@ header {
   margin-right: auto;
   background-color: #ffedbf;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  border: 2px solid black; }
+  border-top: 2px solid black; }
 
 .content::after {
   clear: both;
@@ -163,7 +162,7 @@ header {
   display: inline-block;
   margin-right: 10px; }
 
-.location {
+.locationContent {
   text-align: center; }
 
 .map {
@@ -377,7 +376,7 @@ figure:nth-child(4) {
   list-style: none; }
 
 .right-column li {
-  background-color: #EBEBEB; }
+  background-color: none; }
 
 .hiddensection {
   height: 0; }
