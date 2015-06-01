@@ -1,5 +1,7 @@
 // General Styling
 
+
+
 html {
   box-sizing: border-box; }
 
@@ -77,12 +79,18 @@ header {
 .content-top {
   max-width: 68em;
   margin-left: auto;
+<<<<<<< HEAD
   margin-right: auto; }
 .topimage{
   ul{
     width: 100%;
   }
 }
+=======
+  margin-right: auto;
+  padding-top: 10px; }
+
+>>>>>>> dev
 .content-top::after {
   clear: both;
   content: "";
@@ -216,6 +224,154 @@ header {
   margin-right: 2.35765%;
   width: 100%; }
 
+<<<<<<< HEAD
+=======
+// beggining of slide
+figure {
+  border-radius: 20px;
+}
+.sliderImages {
+  width: 1000px;
+  height:390px;
+  border-radius: 20px;
+}
+
+.css-slideshow{
+  position: relative;
+  height: 370px;
+  margin: 2em auto .5em auto;
+  border-radius: 20px;
+  padding-left: 40px;
+}
+.css-slideshow figure{
+  margin: 0;
+  height: 370px;
+  background: #000;
+  position: absolute;
+}
+.css-slideshow img{
+  box-shadow: 0 0 2px #666;
+}
+.css-slideshow figcaption{
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background: rgba(0,0,0, .3);
+  font-size: .8em;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.css-slideshow:hover figure figcaption{
+  transition: opacity .5s;
+  opacity: 1;
+}
+.css-slideshow-attr{
+  max-width: 495px;
+  text-align: right;
+  font-size: .7em;
+  font-style: italic;
+  margin:0 auto;
+}
+.css-slideshow-attr a{
+  color: #666;
+}
+.css-slideshow figure{
+  opacity:0;
+}
+figure:nth-child(1) {
+  animation:xfade 22s infinite;
+  -webkit-animation:xfade 4250ms infinite;
+}
+figure:nth-child(2) {
+  animation: xfade 12s infinite;
+  -webkit-animation:xfade 8500ms infinite;
+}
+figure:nth-child(3) {
+  animation: xfade 4s infinite;
+  -webkit-animation:xfade 17000ms infinite;
+}
+figure:nth-child(4) {
+  animation: xfade 0s infinite;
+  -webkit-animation:xfade 34000ms infinite;
+}
+
+@keyframes xfade{
+  0%{
+    opacity: 1;
+  }
+  25% {
+    opacity:1;
+  }
+  45% {
+    opacity:0;
+  }
+  65%{
+    opacity: 0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes xfade{
+  0%{
+    opacity: 1;
+  }
+  25% {
+    opacity:1;
+  }
+  45% {
+    opacity:0;
+  }
+  65%{
+    opacity: 0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes xfade {
+ 0%{
+    opacity: 1;
+  }
+  25% {
+    opacity:1;
+  }
+  45% {
+    opacity:0;
+  }
+  65%{
+    opacity: 0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+// End of Slide
+
+// food pics
+
+
+.food-pics {
+  padding: 0;
+  margin-left: 0;
+  text-align: center;
+  background-color: #FFEDBF;
+}
+.foods {
+  border-radius: 10px;
+}
+.foods:hover {
+  width: 250px;
+  height: 170px;
+  cursor: pointer;
+}
+// end food pics
+
+>>>>>>> dev
 .main-image:last-child {
   margin-right: 0; }
 
