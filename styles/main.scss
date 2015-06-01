@@ -106,9 +106,18 @@ header {
 .content-top {
   max-width: 68em;
   margin-left: auto;
+<<<<<<< HEAD
+  margin-right: auto; }
+.topimage{
+  ul{
+    width: 100%;
+  }
+}
+=======
   margin-right: auto;
   padding-top: 10px; }
 
+>>>>>>> dev
 .content-top::after {
   clear: both;
   content: "";
@@ -184,6 +193,7 @@ header {
 // Daily Special Section
 
 .specialImg {
+<<<<<<< HEAD
   width: 100%;
 }
 .special-images{
@@ -193,6 +203,13 @@ header {
   overflow: auto;
   margin-right: 10px;
   margin-left: 10px;
+=======
+  width: 45%;
+  margin-top: -10px;
+}
+.special-images{
+  text-align: center;
+>>>>>>> devnick
 }
 .specialTitle {
   font-weight: bold;
@@ -252,6 +269,8 @@ header {
   margin-right: 2.35765%;
   width: 100%; }
 
+<<<<<<< HEAD
+=======
 // beggining of slide
 figure {
   border-radius: 20px;
@@ -387,6 +406,7 @@ figure:nth-child(4) {
 }
 // end food pics
 
+>>>>>>> dev
 .main-image:last-child {
   margin-right: 0; }
 
