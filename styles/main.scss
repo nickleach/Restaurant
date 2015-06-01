@@ -11,7 +11,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #ffc686; }
+  background-color: #FFF5EB; }
 
 header {
   height: 120px;
@@ -79,10 +79,8 @@ header {
 }
 
 .bernP {
-  background-color: #EBEBEB;
   padding: 4px;
-  border-radius: 3px;
-  border: 1px solid #d6d6d6;
+  color: #904504;
 
 }
 
@@ -95,7 +93,7 @@ header {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffedbf;
+  background-color: #FFF5EB;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   border-top: 2px solid black; }
 
@@ -359,9 +357,11 @@ figure:nth-child(4) {
 
 .food-pics {
   padding: 0;
+  margin: 5px 0 5px 0;
   margin-left: 0;
   text-align: center;
   background-color: #FFEDBF;
+
 }
 .foods {
   border-radius: 10px;
@@ -451,7 +451,7 @@ figure:nth-child(4) {
 }
 
 .right-column li {
-  background-color: none; }
+  background-color: #FFF5EB; }
 
 // Section Revealed/Hidden Styling
 
