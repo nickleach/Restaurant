@@ -43,10 +43,9 @@
   });
     }
 
-
-
       //Pulls sides from API
   var sideTemplate = _.template($('#side-template').text());
+  var blankDesc = '&nbsp;';
 
   $.getJSON(menuURL, function(items){
     processSides(items.sides);
@@ -58,8 +57,6 @@
       $('.sides').append($element)
   });
     }
-
-
 
   //Pulls special from menu API
 
@@ -74,7 +71,7 @@
   $.getJSON(menuURL).success(function(response) {
     response.entrees.filter(function(x) {
       if(x.id == specialID) {
-        $('.special').html('<span class="specialTitle">' + x.item + '</span><span>.........</span><span class="specialPrice"> ' + x.price + '</span><p class="specialDesc">' + x.description + '</p>');
+        $('.special').html('<span class="specialTitle">' + x.item + '</span><span>.............................................</span><span class="specialPrice"> ' + x.price + '</span><p class="specialDesc">' + x.description + '</p>');
       }
     })
   });
@@ -121,8 +118,8 @@
     { type: 'text', CSS: 'fullName', label: 'Full Name' },
     { type: 'number', CSS: 'guestNum', label: 'Number of Guests' },
     { type: 'date', CSS: 'reserveDate', label: 'Date' },
-    { type: 'text', CSS: 'specialNotes', label: 'Special Notes' },
-    { type: 'text', CSS: 'seatPref', label: 'Seating Preference'},
+    { type: 'textarea', CSS: 'specialNotes', label: 'Special Notes' },
+    { type: 'select', CSS: 'seatPref', label: 'Seating Preference', opt1: 'Indoor', opt2: 'Outdoor'},
     { type: 'submit', CSS: 'submitBtn', label: 'Reserve Table'}
   ];
 
@@ -134,14 +131,28 @@
 
       if (elem.type === 'submit') {
 
-        formHTML += '<input type="' + elem.type + '" value="' + elem.label + '" />';
+        formHTML += '<input class="' + elem.CSS + '" type="' + elem.type + '" value="' + elem.label + '" />';
 
-      } else {
+      }
 
+      else if (elem.type === 'select') {
+        formHTML += '<p class="formLabel">' + elem.label + '</p>'
+        formHTML +=  '<'+ elem.type + ' class="' + elem.CSS + '">'
+        formHTML +=     '<option value="' + elem.opt1 + '">' + elem.opt1 + '</option>'
+        formHTML +=     '<option value="' + elem.opt2 + '">' + elem.opt2 + '</option>'
+        formHTML +=  '</' + elem.type + '>'
+      }
+
+      else if (elem.type === 'textarea') {
+        formHTML += '<p class="formLabel">' + elem.label + '</p>'
+        formHTML += '<textarea class="textArea" rows="4" cols="50">'
+        formHTML += '</textarea>'
+      }
+
+       else {
         formHTML += '<label class="formLabel">' + elem.label + '</label>';
         formHTML += '<input class="' + elem.CSS + '" type="' + elem.type + '" />';
         formHTML += '</br></br>';
-
       }
 
     });

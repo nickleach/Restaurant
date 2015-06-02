@@ -19,7 +19,7 @@ header {
   height: 80px; }
 
 .container {
-  max-width: 68em;
+  max-width: 70em;
   margin-left: auto;
   margin-right: auto; }
 
@@ -32,13 +32,14 @@ header {
   float: left; }
 
 .social {
+  margin-right: 20px;
   float: right;
   margin-top: 25px;
   width: 140px;
   height: 70px;
   background-color: #FFEDBF;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: 12px;
   font-style: italic;
   color: black; }
@@ -46,6 +47,7 @@ header {
 .smIcon {
   width: 25px;
   height: 25px;
+  border-radius: 5px;
   display: inline-block;
   background-color: #632528; }
 
@@ -129,9 +131,9 @@ header {
 .readMore {
   position: absolute;
   top: 158px;
-  right: 11px;
-  background: #632528;
-  color: ivory; }
+  right: 13px;
+  background: #FFEDBF;
+  color: black; }
 
 .readMore:hover {
   border-bottom: 1px black solid; }
@@ -139,7 +141,7 @@ header {
 .postTitle {
   display: inline-block;
   float: left;
-  margin-bottom: 13px; }
+  margin-bottom: 14px; }
 
 .postDate {
   display: inline-block;
@@ -201,12 +203,12 @@ header {
   padding: 5px 5px 0px 5px; }
 
 .ML {
-  color: ivory;
+  color: black;
   text-decoration: none;
   font-weight: bold; }
 
 .ML:hover {
-  border-bottom: ivory 1px solid; }
+  border-bottom: black 1px solid; }
 
 .main-image {
   float: left;
@@ -351,7 +353,8 @@ figure:nth-child(4) {
   overflow: hidden; }
 
 .section-headers {
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding-left: -40px; }
 
 .section-headers span {
   cursor: pointer;
@@ -410,13 +413,13 @@ figure:nth-child(4) {
 .menudisplayedsection {
   height: 1760px;
   visibility: visible;
-  padding-left: 50px;
+  padding-left: 40px;
   background-color: #FFEDBF; }
 
 .displayedsection {
   height: 800px;
   visibility: visible;
-  padding-left: 50px;
+  padding-left: 30px;
   background-color: #FFEDBF; }
 
 .menuHeader {
@@ -582,11 +585,17 @@ figure:nth-child(4) {
   border-radius: 3px;
   border: 1px solid #A9A9A9; }
 
-.specialNotes {
-  width: 400px;
-  height: 85px;
-  border-radius: 3px;
-  border: 1px solid #A9A9A9; }
+.textArea {
+  display: block; }
+
+.seatPref {
+  display: block;
+  width: 200px; }
+
+.submitBtn {
+  margin-top: 50px;
+  width: 140px;
+  height: 40px; }
 
 .foodpicsHead {
   margin-left: 30px; }
