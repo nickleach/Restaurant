@@ -44,12 +44,12 @@ header {
   margin-top: 25px;
   width: 140px;
   height: 70px;
-  background-color: #632528;
+  background-color: #FFEDBF;
   text-align: center;
   border-radius: 3px;
   font-size: 12px;
   font-style: italic;
-  color: ivory;
+  color: black;
 }
 
 .smIcon {
@@ -106,6 +106,11 @@ header {
 .content-top {
   max-width: 68em;
   margin-left: auto;
+  margin-right: auto; }
+.topimage{
+  ul{
+    width: 100%;
+  }
   margin-right: auto;
   padding-top: 10px; }
 
@@ -115,13 +120,13 @@ header {
   display: table; }
 
 .content-top li {
-  color: ivory;
+  color: black;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
   height: 240px;
-  background-color: #632528;
+  background-color: #FFEDBF;
   overflow: hidden;
   margin-left: -10px; }
 
@@ -194,6 +199,9 @@ header {
   margin-right: 10px;
   margin-left: 10px;
 }
+.special-images{
+  text-align: center;
+}
 .specialTitle {
   font-weight: bold;
   display: inline-block;
@@ -251,7 +259,6 @@ header {
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
-
 // beggining of slide
 figure {
   border-radius: 20px;
@@ -387,6 +394,7 @@ figure:nth-child(4) {
 }
 // end food pics
 
+>>>>>>> dev
 .main-image:last-child {
   margin-right: 0; }
 
