@@ -607,5 +607,23 @@ footer {
   font-style: italic;
   font-size: 13px; }
 
+footer p {
+  display: inline-block; }
+
 .foot {
   padding-left: 10px; }
+
+.footer-right {
+  float: right;
+  margin-top: 12px; }
+
+.footer-right span {
+  border-right: 1px solid black; }
+
+.footer-right a {
+  text-decoration: none;
+  padding-right: 5px;
+  color: #555; }
+
+.footer-right a:hover {
+  text-decoration: underline; }
