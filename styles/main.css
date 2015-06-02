@@ -227,7 +227,8 @@ figure {
   height: 370px;
   margin: 2em auto 0.5em auto;
   border-radius: 20px;
-  padding-left: 40px; }
+  padding-left: 40px;
+  margin-bottom: 40px; }
 
 .css-slideshow figure {
   margin: 0;
