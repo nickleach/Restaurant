@@ -123,7 +123,7 @@
     { type: 'date', CSS: 'reserveDate', label: 'Date' },
     { type: 'text', CSS: 'specialNotes', label: 'Special Notes' },
     { type: 'text', CSS: 'seatPref', label: 'Seating Preference'},
-    { type: 'Submit', CSS: 'submitBtn', label: 'Reserve Table'}
+    { type: 'submit', CSS: 'submitBtn', label: 'Reserve Table'}
   ];
 
   function formBuilder(data) {
